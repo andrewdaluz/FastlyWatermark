@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Fastly\Cdn\Model\View\Asset\Image">
+        <plugin disabled="false" name="Andrewdaluz_Fastly_ImageUrl" type="Andrewdaluz\Fastly\Plugin\Model\View\Asset\Image"/>
+    </type>
+    <type name="Fastly\Cdn\Model\Product\Image">
+        <plugin disabled="false" name="Andrewdaluz_Fastly_ImageUrl" type="Andrewdaluz\Fastly\Plugin\Model\Product\Image"/>
+    </type>
+</config>

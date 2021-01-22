@@ -1,0 +1,21 @@
+{
+    "name": "andrewdaluz/fastly-watermark",
+    "description": "Add Watermark using Fastly ImageOptimization Overlay function",
+    "require": {
+        "php": "7.0.2|7.0.4|~7.0.6|^7.1.0|^7.2.0|^7.3.0",
+        "fastly/magento2": ">=1.2"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Andrewdaluz\\Fastly\\": ""
+        }
+    }
+}

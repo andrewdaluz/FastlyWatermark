@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Backend/etc/system_file.xsd">
+    <system>
+        <tab id="andrewdaluz" translate="label" sortOrder="9999999" class="andrewdaluz-extensions-tab">
+            <label>Andrew da Luz</label>
+        </tab>
+        <section id="andrewdaluz_fastly" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Fastly</label>
+            <tab>andrewdaluz</tab>
+            <resource>Andrewdaluz_Fastly::acl_rule</resource>
+            <group id="watermark" translate="label" type="text"
+                   sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Fastly - Watermarks</label>
+                <field id="enable" translate="label" type="select"
+                       sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Adds overlay parameter with watermark image path on image url]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
